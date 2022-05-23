@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: contacts
 title: Contacts
 permalink: /contacts/
 ---
+{%- include footer.html -%}
