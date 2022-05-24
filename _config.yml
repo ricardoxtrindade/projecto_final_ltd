@@ -18,13 +18,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Ricardo Trindade
-email: ricardo.teixeira.trindade@gmail.com
+title: RT Product Designer
+author: Ricardo Trindade
+email: email@gmail.com
+phone: +351 910000000
 description: © Ricardo Trindade, 2022
 baseurl: /projecto_final_ltd
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  ricardoxtrindade
 linkedin_username: ricardoxtrindade
+instagram_username: ricardoxtrindade
+behance_username: ricardoxtrindade
 
 # Build settings
 theme: minima

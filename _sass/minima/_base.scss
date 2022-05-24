@@ -106,13 +106,17 @@ a {
   color: $brand-color;
   text-decoration: none;
 
-  &:visited {
-    color: darken($brand-color, 15%);
-  }
+  // &:visited {
+  //   color: darken($brand-color, 15%);
+  // }
 
   &:hover {
-    color: $text-color;
+    // color: $text-color;
     text-decoration: underline;
+  }
+
+  .username {
+    color: lighten($brand-color, 15%);
   }
 
   .social-media-list &:hover {
@@ -212,7 +216,7 @@ pre {
     width: 16px;
     height: 16px;
     display: inline-block;
-    fill: #{$grey-color};
+    fill: lighten($brand-color, 15%);
     padding-right: 5px;
     vertical-align: text-top;
 }
