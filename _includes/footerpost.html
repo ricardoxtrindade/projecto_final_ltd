@@ -1,1 +1,6 @@
-<h1>This is a Footer to be added only on the Post's pages</h1>
+<hr>
+<div class="footerpost">
+    {% for post in site.posts %}
+        <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</div>
