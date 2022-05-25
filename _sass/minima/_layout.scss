@@ -144,9 +144,7 @@
 .footer-col-2 {
   width: -webkit-calc(30% - (#{$spacing-unit} / 2));
   width:         calc(30% - (#{$spacing-unit} / 2));
-  p {
-    text-align: right;
-  }
+  color: $grey-color;
 }
 
 @include media-query($on-laptop) {
