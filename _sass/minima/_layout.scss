@@ -259,6 +259,7 @@
   }
 }
 
+.post-list-heading,
 .post.h-entry,
 .post-header {
   display: flex;
@@ -275,6 +276,7 @@
 }
 
 .footerpost {
+  margin: auto;
   list-style: none;
   display: flex;
   justify-content: space-between;
