@@ -12,12 +12,18 @@ layout: default
     <ul class="post-list">
       {%- for post in site.posts -%}
       <li>
+        {%- if post.heroimage -%}
+          <img src="{{- post.heroimage | relative_url -}}" alt="{{ post.alttext }}" class="home-hero-image">
+        {%- else -%}
+          {%- assign postImage = "/assets/img/default.jpg" -%}
+          <img src="{{- postImage | relative_url -}}" alt="colourful gradient background" class="home-hero-img">
+        {%- endif -%}
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}{%- if post.categories -%}
         <span class="post-meta">{{ post.date | date: date_format }} • {{ post.categories }}</span>
         {%- endif -%}
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
+           {{ post.title | escape }}
           </a>
         </h3>
         {%- if site.show_excerpts -%}

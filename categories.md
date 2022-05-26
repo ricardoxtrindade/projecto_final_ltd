@@ -4,10 +4,8 @@ title: Categories
 permalink: /categories/
 ---
 
-<!-- {{ site.categories }} -->
-
-<!-- <div class="categories">
-    {% for categories in site.categories %}
+<!-- <ul class="categories">
+    {% for item in site.categories %}
         <li>{{ site.categories }}</li>
     {% endfor %}
-</div> -->
+</ul> -->

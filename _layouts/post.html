@@ -19,6 +19,12 @@ layout: default
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
+    {%- if page.heroimage -%}
+      <img src="{{- page.heroimage | relative_url -}}" alt="{{ page.alttext }}" class="hero-img">
+    {%- else -%}
+      {%- assign postImage = "/assets/img/default.jpg" -%}
+      <img src="{{- postImage | relative_url -}}" alt="colourful gradient background" class="hero-img">
+    {%- endif -%}
     {{ content }}
   </div>
 
