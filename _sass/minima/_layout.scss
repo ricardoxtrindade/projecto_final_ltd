@@ -187,13 +187,13 @@
   list-style: none;
   display: grid;
   grid-gap: $spacing-unit/2;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
 
   @include media-query($on-laptop) {
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
   }
   @include media-query($on-palm) {
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
   }
   li {
     display: flex;
