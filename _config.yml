@@ -28,7 +28,6 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  ricardoxtrindade
 linkedin_username: ricardoxtrindade
 instagram_username: ricardoxtrindade
-behance_username: ricardoxtrindade
 
 # Build settings
 theme: minima
@@ -41,6 +40,7 @@ defaults:
       type: posts
     values:
       layout: post
+      author: Ricardo
       permalink: /:categories/:title:output_ext
 
 # Exclude from processing.

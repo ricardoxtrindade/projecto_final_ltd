@@ -1,6 +1,12 @@
 <hr>
-<div class="footerpost">
+<!-- <div class="footerpost">
     {% for post in site.posts %}
         <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</div> -->
+
+<div class="footerpost">
+    {% for post in site.posts %}
+        <li><a class="{% if post.url | relative_url == post.url | relative_url %}active{% endif %}" href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
     {% endfor %}
 </div>

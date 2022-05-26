@@ -182,24 +182,6 @@
   @include relative-font-size(1.75);
 }
 
-// .post-list {
-//   margin-left: 0;
-//   list-style: none;
-//   display: flex;
-//   flex-wrap: wrap;
-
-//   > li {
-//     margin-bottom: $spacing-unit;
-//     width: 33.333%;
-//     @include media-query($on-laptop) {
-//       width: 50%;
-//     }
-//     @include media-query($on-palm) {
-//       width: 100%;
-//     }
-//   }
-// }
-
 .post-list {
   margin-left: 0;
   list-style: none;
@@ -213,9 +195,11 @@
   @include media-query($on-palm) {
     grid-template-columns: auto;
   }
-  // > li {
-  //   background-color: magenta;
-  // }
+  > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .post-meta {
@@ -249,9 +233,6 @@
 
 .post-content {
   margin-bottom: $spacing-unit;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
   h2 {
     @include relative-font-size(2);
@@ -276,6 +257,21 @@
       @include relative-font-size(1.125);
     }
   }
+}
+
+.post.h-entry,
+.post-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.educationlist {
+  list-style: none;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-unit*2;
 }
 
 .footerpost {
