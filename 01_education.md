@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Education
-permalink: /Education/
+permalink: /education/
 ---
 
 <ul class="educationlist">

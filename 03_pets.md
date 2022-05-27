@@ -5,5 +5,5 @@ permalink: /pets/
 ---
 
 {% for item in site.pets %}
-    <h1>{{ site.pets.title }}</h1>
+<h1><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h1>
 {% endfor %}

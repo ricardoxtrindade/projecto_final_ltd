@@ -44,9 +44,8 @@ defaults:
       permalink: /:categories/:title:output_ext
 
 collections:
-  Pets:
+  pets:
     output: true
-    permalink: /mypets/:name
 
 # Exclude from processing.
 # The following items will not be processed, by default.
